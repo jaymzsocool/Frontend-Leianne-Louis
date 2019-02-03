@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
+import LuncherList from '../components/LuncherList/LuncherList';
+
 import { connect } from 'react-redux';
 
 class LuncherListView extends Component {
-    
+
+    lunchSelected = id => {
+        console.log(true)
+        console.log(id)
+    }
+
     render() {
         return (
-            <h1>Connected</h1>
+            <LuncherList lunchSelected={this.lunchSelected} lunches={this.props.lunches}/>
         )
     }
 }
 
-export default LuncherListView;
+const mapStateToProps = state => {
+    console.log(state)
+    return {
+        lunches: state.lunches
+    }
+}
+export default connect(mapStateToProps, {})(LuncherListView);

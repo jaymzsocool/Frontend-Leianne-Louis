@@ -3,6 +3,8 @@ import { Route, NavLink } from 'react-router-dom';
 
 import LoginFormView from './views/LoginFormView';
 import SignUpFormView from './views/SignUpFormView';
+import LuncherListView from './views/LuncherListView';
+
 import './App.css';
 
 class App extends Component {
@@ -15,6 +17,7 @@ class App extends Component {
 
         <Route path='/login' component={LoginFormView} />
         <Route path='/signUp' component={SignUpFormView} />
+        <LuncherListView/ >
       </div>
     );
   }
