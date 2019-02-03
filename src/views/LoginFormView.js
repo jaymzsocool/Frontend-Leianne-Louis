@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loginUser } from '../store/actions';
 
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/Login/LoginForm';
 
 
 class LoginFormView extends Component {
