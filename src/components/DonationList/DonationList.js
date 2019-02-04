@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-const LuncherList = props => {
+const DonationList = props => {
   return (
     <div>
-      {props.lunches.map(e => (
-        <div onClick={() => props.lunchSelected(e.id)} key={e.id}>
+      {props.donations.map(e => (
+        <div onClick={() => props.donationSelected(e.id)} key={e.id}>
           <img src={`${e.image}`} alt={`${e.school}`}/>
           <h3>{e.school}</h3>
           <p>{e.donation} needed</p>
@@ -15,4 +15,4 @@ const LuncherList = props => {
   );
 };
 
-export default LuncherList;
+export default DonationList;

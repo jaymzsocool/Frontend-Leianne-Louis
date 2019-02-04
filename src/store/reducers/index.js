@@ -1,6 +1,6 @@
 
 const initialState = {
-    lunches: [
+    donations: [
         {
             "id": 1,
             "school": "Mann Inc",
